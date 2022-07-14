@@ -1,13 +1,15 @@
 
 class Dados:
 
-    estoque = 0
-    totalAp = 0
+    total = 0
+
     def __init__(self, aparelho, modelo, marca, estoque):
         self.aparelho = aparelho
         self.modelo = modelo
         self.marca = marca
         self.estoque = estoque
+
+        Dados.total += 1
 
     def ExibirAp(self):
         print('Aparelho : ',self.aparelho)
@@ -29,6 +31,8 @@ class Dados:
 ap1 = Dados('notebook', 'Dell Inspiron i15 M25P', 'Dell', 5)
 ap2 = Dados('Celular', 'Iphone', '11pro', 2)
 ap3 = Dados('Celular', 'Samsung', 'A22', 1)
+
+print('Aparelhos disponiveis: ', Dados.total)
 resposta = int(input('Digite 1, 2 ou 3 para exibir Dados de um dos aparelhos: '))
 
 if resposta == 1:
