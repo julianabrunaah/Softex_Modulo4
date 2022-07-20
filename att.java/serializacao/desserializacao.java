@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 
-public class deserializacao {
+public class desserializacao {
     
     public static void main(String[] args) throws IOException, ClassNotFoundException { 
         Aluno aluno = new Aluno ("Juliana", "A");
